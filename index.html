@@ -1,1 +1,28 @@
-課題完了
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kadai①-3</title>
+</head>
+<body>
+  <script>
+  const title =  '==============================\n現在持っているタスクの一覧\n==============================';
+  const tasks = ['0 : 掃除', '1 : 買い物', '2 : 散歩',];
+  const taskPush = (task) => tasks.push(task);
+  
+  console.log(title);
+  tasks.forEach((task, index) => console.log(index, task));
+
+  let task = prompt('タスクを入力して下さい。');
+  console.log(task)
+  taskPush(task);
+
+  console.log(title);
+  tasks.forEach((task, index) => console.log(index, task));
+
+  alert('新しいタスクを入力しました。');
+  </script>
+</body>
+</html>
+
